@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-zewif = { path = "../zewif" }
+zewif = "0.1.0"
 
 anyhow = "1.0.95"
 hex = "0.4.3"
@@ -35,3 +35,6 @@ bip0039 = "=0.11.0"
 [features]
 default = []
 with-context = []
+
+[patch.crates-io]
+zewif = { git = "https://github.com/nuttycom/zewif", rev = "61c988fbfb6c3e74c5b98ba3da1cbc521b3967bd" }
